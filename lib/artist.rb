@@ -3,6 +3,7 @@ require_relative '../config/environment'
 
 class Artist
   extend Memorable::ClassMethods
+  extend Findable::ClassMethods
 
   attr_accessor :name
   attr_reader :songs
